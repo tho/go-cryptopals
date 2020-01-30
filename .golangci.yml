@@ -1,0 +1,17 @@
+---
+linters:
+  enable-all: true
+
+linters-settings:
+  gocritic:
+    enabled-tags:
+      - diagnostic
+      - experimental
+      - opinionated
+      - performance
+      - style
+
+issues:
+  exclude-rules:
+    - path: _test\.go
+      text: "Using the variable on range scope `tt` in function literal"
